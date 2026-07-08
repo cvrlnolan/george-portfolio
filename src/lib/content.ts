@@ -8,7 +8,7 @@ export const profile = {
 	githubUrl: "https://github.com/cvrlnolan",
 	resumeUrl: "/George-Yana-Mbome-Resume.pdf",
 	summary:
-		"Senior Software Engineer with 4+ years building full-stack systems (TypeScript, Python) at Invisible Technologies — 600+ merged pull requests across 11 repositories — plus 7+ years of freelance and startup engineering experience. Track record of owning verification, billing, and process-automation systems end-to-end, from architecture through deployment.",
+		"Senior Software Engineer with 4+ years building full-stack systems (TypeScript, Python) at Invisible Technologies — 600+ merged pull requests across 11 repositories — plus a part-time contract at Lemonet (141 merged PRs) and 7+ years of freelance and startup engineering experience spanning billing, marketplace verification, payments, admin tooling, and e-commerce products. Proven ability to take any product idea from architecture through deployment and scale it.",
 };
 
 export const stats = [
@@ -39,6 +39,16 @@ export const experience: Job[] = [
 			"Built the expert verification & assessment platform end-to-end, including Neo4j-backed verification services, fraud-detection checks, and AI-assessment integrations (WECP, Hallo AI), sustaining 59% automated test coverage across 300+ commits.",
 			"Engineered core billing and invoicing infrastructure (235 merged PRs) for the flagship process-automation product, including a time-log-based billing engine and the step-execution logic behind the visual process builder.",
 			"Designed an opportunity-application and auto-shortlisting system that streamlined expert-to-role matching, supporting a platform used by enterprise clients including Meta, Apple, Amazon, and xAI.",
+		],
+	},
+	{
+		company: "Lemonet",
+		role: "Software Engineer (Part-Time Contract)",
+		location: "Remote",
+		period: "Jun 2025 — Apr 2026",
+		bullets: [
+			"Delivered 141 merged pull requests building core admin surfaces — a webmaster partner portal, leadership/fulfillment/team-performance dashboards — and Stripe-based subscription billing and cancellation logic; ranked the 4th most active contributor of 13 on the company's monorepo.",
+			"Designed and scaled a self-hosted GitHub Actions runner fleet and resolved a recurring CI build-cache regression, documented in the team's build-performance runbook.",
 		],
 	},
 	{

@@ -26,8 +26,8 @@ export function Hero() {
 				<div className="mt-8 flex flex-col gap-4 border-t border-line pt-6 md:flex-row md:items-end md:justify-between">
 					<p className="max-w-xl text-base leading-relaxed text-ink-dim">
 						<span className="text-signal">&gt;</span> {profile.role} — shipping
-						verification, billing, and process-automation systems end to end,
-						from architecture through deployment.
+						billing, marketplace verification, payments, admin tooling, and
+						e-commerce products from architecture through deployment and scale.
 					</p>
 
 					<a
