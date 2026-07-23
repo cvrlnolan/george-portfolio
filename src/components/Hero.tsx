@@ -14,7 +14,7 @@ export function Hero() {
 					<MapPin size={12} className="text-signal-dim" />
 					{profile.location}
 					<span className="text-line-strong">/</span>
-					available for select engagements
+					open to new opportunities
 				</p>
 
 				<h1 className="font-display text-balance text-[clamp(2.75rem,9vw,6.5rem)] font-medium leading-[0.95] text-ink">

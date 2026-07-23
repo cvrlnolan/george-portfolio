@@ -8,7 +8,7 @@ export const profile = {
 	githubUrl: "https://github.com/cvrlnolan",
 	resumeUrl: "/George-Yana-Mbome-Resume.pdf",
 	summary:
-		"Senior Software Engineer with 4+ years building full-stack systems (TypeScript, Python) at Invisible Technologies — 600+ merged pull requests across 11 repositories — plus a part-time contract at Lemonet (141 merged PRs) and 7+ years of freelance and startup engineering experience spanning billing, marketplace verification, payments, admin tooling, and e-commerce products. Proven ability to take any product idea from architecture through deployment and scale it.",
+		"Senior Software Engineer with 4+ years at Invisible Technologies (600+ merged PRs across 11 repos), including a Pinecone-backed embeddings/vector-search feature and an LLM-powered natural-language-to-filter pipeline — plus a part-time contract at Lemonet (141 merged PRs) and 7+ years of freelance/startup experience spanning billing, marketplace verification, payments, admin tooling, and e-commerce. Proven ability to take any product idea from architecture through deployment and scale it.",
 };
 
 export const stats = [
@@ -32,13 +32,12 @@ export const experience: Job[] = [
 		company: "Invisible Technologies",
 		role: "Senior Software Engineer",
 		location: "Remote",
-		period: "Dec 2021 — Present",
-		current: true,
+		period: "Dec 2021 — Jul 2026",
 		bullets: [
 			"Shipped 600+ merged pull requests (1,100+ commits) across 11 repositories in TypeScript and Python over 4+ years, ranking as a top-2 individual contributor on the core backend platform.",
+			"Contributed to a Pinecone-backed vector search and embeddings system that indexed thousands of expert resumes/profiles, and an OpenAI-powered pipeline that converted natural-language search text into structured, filterable properties for the platform's expert-search functionality.",
 			"Built the expert verification & assessment platform end-to-end, including Neo4j-backed verification services, fraud-detection checks, and AI-assessment integrations (WECP, Hallo AI), sustaining 59% automated test coverage across 300+ commits.",
 			"Engineered core billing and invoicing infrastructure (235 merged PRs) for the flagship process-automation product, including a time-log-based billing engine and the step-execution logic behind the visual process builder.",
-			"Designed an opportunity-application and auto-shortlisting system that streamlined expert-to-role matching, supporting a platform used by enterprise clients including Meta, Apple, Amazon, and xAI.",
 		],
 	},
 	{
@@ -98,6 +97,15 @@ export const education = {
 };
 
 export const skills = [
+	{
+		group: "AI / ML",
+		items: [
+			"Embeddings",
+			"Vector Search (Pinecone)",
+			"OpenAI API Integration",
+			"LLM-Based Extraction",
+		],
+	},
 	{
 		group: "Languages",
 		items: ["JavaScript", "TypeScript", "Python", "PHP"],
