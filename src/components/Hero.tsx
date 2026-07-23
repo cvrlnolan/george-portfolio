@@ -18,9 +18,9 @@ export function Hero() {
 				</p>
 
 				<h1 className="font-display text-balance text-[clamp(2.75rem,9vw,6.5rem)] font-medium leading-[0.95] text-ink">
-					George Carl
+					George
 					<br />
-					<span className="italic text-ink-dim">Yana Mbome</span>
+					<span className="italic text-ink-dim">Mbome</span>
 				</h1>
 
 				<div className="mt-8 flex flex-col gap-4 border-t border-line pt-6 md:flex-row md:items-end md:justify-between">

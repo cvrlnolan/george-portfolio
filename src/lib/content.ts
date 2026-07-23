@@ -1,5 +1,5 @@
 export const profile = {
-	name: "George Carl Yana Mbome",
+	name: "George Mbome",
 	role: "Senior Software Engineer",
 	location: "Douala, Cameroon",
 	phone: "+237 696 740 298",
