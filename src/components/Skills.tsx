@@ -1,53 +1,48 @@
 import { Reveal } from "#/components/Reveal";
 import { SectionHeading } from "#/components/SectionHeading";
-import { Badge } from "#/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "#/components/ui/card";
 import { education, skills } from "#/lib/content";
 
 export function Skills() {
 	return (
-		<section id="skills" className="mx-auto max-w-5xl px-6 py-28">
-			<SectionHeading index="03" title="skills" />
+		<section id="skills" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
+			<SectionHeading title="Skills" />
 
-			<div className="grid gap-8 md:grid-cols-2">
+			<div className="flex flex-col divide-y divide-line">
 				{skills.map((group, i) => (
-					<Reveal key={group.group} delay={i * 50}>
-						<Card className="rounded-lg border-line bg-panel py-6 shadow-none">
-							<CardHeader>
-								<CardTitle className="font-mono text-xs font-normal uppercase tracking-widest text-ink-faint">
-									{group.group}
-								</CardTitle>
-							</CardHeader>
-							<CardContent className="flex flex-wrap gap-2">
+					<Reveal key={group.group} delay={i * 40}>
+						<div className="grid gap-4 py-7 first:pt-0 md:grid-cols-[1fr_3fr] md:gap-10">
+							<h3 className="pt-1 font-mono text-xs uppercase tracking-wider text-ink-faint">
+								{group.group}
+							</h3>
+							<div className="flex flex-wrap gap-2">
 								{group.items.map((item) => (
-									<Badge
+									<span
 										key={item}
-										variant="outline"
-										className="rounded-full border-line-strong px-3 py-1 text-xs text-ink-dim transition-colors hover:border-signal hover:text-signal"
+										className="rounded-full border border-line px-3 py-1 text-sm text-ink-dim transition-colors hover:border-line-strong hover:text-ink"
 									>
 										{item}
-									</Badge>
+									</span>
 								))}
-							</CardContent>
-						</Card>
+							</div>
+						</div>
 					</Reveal>
 				))}
 
-				<Reveal delay={skills.length * 50}>
-					<Card className="h-full justify-center rounded-lg border-dashed border-line bg-transparent py-6 shadow-none">
-						<CardContent>
-							<h3 className="mb-2 font-mono text-xs uppercase tracking-widest text-ink-faint">
-								Education
-							</h3>
-							<p className="font-display text-lg text-ink">
+				<Reveal delay={skills.length * 40}>
+					<div className="grid gap-4 py-7 md:grid-cols-[1fr_3fr] md:gap-10">
+						<h3 className="pt-1 font-mono text-xs uppercase tracking-wider text-ink-faint">
+							Education
+						</h3>
+						<div>
+							<p className="font-display text-lg font-medium text-ink">
 								{education.degree}
 							</p>
-							<p className="text-sm text-ink-dim">{education.school}</p>
+							<p className="mt-0.5 text-sm text-ink-dim">{education.school}</p>
 							<p className="mt-1 font-mono text-xs text-ink-faint">
 								{education.period}
 							</p>
-						</CardContent>
-					</Card>
+						</div>
+					</div>
 				</Reveal>
 			</div>
 		</section>

@@ -8,19 +8,20 @@ export const profile = {
 	githubUrl: "https://github.com/cvrlnolan",
 	resumeUrl: "/George-Yana-Mbome-Resume.pdf",
 	summary:
-		"Senior Software Engineer with 4+ years at Invisible Technologies (600+ merged PRs across 11 repos), including a Pinecone-backed embeddings/vector-search feature and an LLM-powered natural-language-to-filter pipeline — plus a part-time contract at Lemonet (141 merged PRs) and 7+ years of freelance/startup experience spanning billing, marketplace verification, payments, admin tooling, and e-commerce. Proven ability to take any product idea from architecture through deployment and scale it.",
+		"Senior Software Engineer with 4+ years at Invisible Technologies, a $2B AI and workflow-automation company, where I shipped 600+ merged PRs across 11 repos including LLM-powered product features (Pinecone, OpenAI) and Temporal-orchestrated infrastructure. I also ran a part-time contract at Lemonet (141 merged PRs) and have 7+ years of freelance and startup experience. Full-stack and comfortable in infrastructure, with agentic coding tools (Claude Code) part of my daily workflow, and a track record of owning features autonomously while working across teams.",
 };
 
 export const stats = [
 	{ value: "600+", label: "merged pull requests" },
 	{ value: "11", label: "production repositories" },
 	{ value: "11+ yrs", label: "engineering experience" },
-	{ value: "100%", label: "Upwork job success" },
+	{ value: "$2B", label: "platform scale, Invisible" },
 ];
 
 export type Job = {
 	company: string;
 	role: string;
+	subtitle?: string;
 	location: string;
 	period: string;
 	current?: boolean;
@@ -31,22 +32,25 @@ export const experience: Job[] = [
 	{
 		company: "Invisible Technologies",
 		role: "Senior Software Engineer",
+		subtitle: "$2B AI workforce and process-automation platform",
 		location: "Remote",
-		period: "Dec 2021 — Jul 2026",
+		period: "Dec 2021 - Jul 2026",
 		bullets: [
-			"Shipped 600+ merged pull requests (1,100+ commits) across 11 repositories in TypeScript and Python over 4+ years, ranking as a top-2 individual contributor on the core backend platform.",
-			"Contributed to a Pinecone-backed vector search and embeddings system that indexed thousands of expert resumes/profiles, and an OpenAI-powered pipeline that converted natural-language search text into structured, filterable properties for the platform's expert-search functionality.",
-			"Built the expert verification & assessment platform end-to-end, including Neo4j-backed verification services, fraud-detection checks, and AI-assessment integrations (WECP, Hallo AI), sustaining 59% automated test coverage across 300+ commits.",
-			"Engineered core billing and invoicing infrastructure (235 merged PRs) for the flagship process-automation product, including a time-log-based billing engine and the step-execution logic behind the visual process builder.",
+			"Shipped 600+ merged pull requests (1,100+ commits) across 11 repositories in TypeScript and Python, ranking as a top-2 individual contributor on the core backend platform used by Meta, Apple, Amazon, and xAI.",
+			"Built LLM-powered product features end to end with agentic coding workflows (Claude Code): a Pinecone-backed embeddings and vector-search system indexing thousands of expert profiles, plus an OpenAI pipeline converting natural-language search into structured, filterable properties.",
+			"Orchestrated LLM workloads (embedding generation, OpenAI extraction, retries) through Temporal workflows, refactored core services for multi-tenancy, and deployed on Docker and Kubernetes.",
+			"Designed PostgreSQL and Neo4j services for an expert verification and assessment platform, including fraud-detection checks and third-party AI-assessment integrations (WECP, Hallo AI), at 59% automated test coverage.",
+			"Engineered core billing and invoicing infrastructure (235 merged PRs): a time-log-based billing engine and the step-execution logic behind the visual process builder.",
 		],
 	},
 	{
 		company: "Lemonet",
-		role: "Software Engineer (Part-Time Contract)",
+		role: "Software Engineer, Part-Time Contract",
+		subtitle: "Early-stage marketing-technology startup",
 		location: "Remote",
-		period: "Jun 2025 — Apr 2026",
+		period: "Jun 2025 - Apr 2026",
 		bullets: [
-			"Delivered 141 merged pull requests building core admin surfaces — a webmaster partner portal, leadership/fulfillment/team-performance dashboards — and Stripe-based subscription billing and cancellation logic; ranked the 4th most active contributor of 13 on the company's monorepo.",
+			"Delivered 141 merged pull requests building core admin surfaces (a webmaster partner portal and leadership, fulfillment, and team-performance dashboards) and Stripe-based subscription billing and cancellation logic, ranking as the 4th most active contributor of 13 on the monorepo.",
 			"Designed and scaled a self-hosted GitHub Actions runner fleet and resolved a recurring CI build-cache regression, documented in the team's build-performance runbook.",
 		],
 	},
@@ -54,46 +58,60 @@ export const experience: Job[] = [
 		company: "Certified Upwork Freelancer",
 		role: "Software Engineer",
 		location: "Remote",
-		period: "Feb 2019 — Present",
+		period: "Feb 2019 - Present",
 		current: true,
 		bullets: [
-			"Delivered full-stack web applications for international clients with a 100% job success score, using React, TypeScript, Next.js, Tailwind CSS, Python, and FastAPI.",
-			"Owned projects end-to-end from architecture through deployment, building PostgreSQL- and MySQL-backed applications for startups and small businesses.",
+			"Delivered full-stack web applications for international clients with a 100% job success score, using React, TypeScript, Next.js, Python, and FastAPI.",
 		],
 	},
 	{
-		company: "Tirla Technologies",
-		role: "Software Engineer",
+		company: "Early Career",
+		role: "Software Engineer and Engineering Intern",
 		location: "Douala, Cameroon",
-		period: "Aug 2018 — Feb 2019",
+		period: "2017 - 2019",
 		bullets: [
-			"One of two engineers at an early-stage startup; built and delivered multiple client web projects using WordPress, React, Node.js, and Express.",
+			"Software Engineer at Tirla Technologies and Coredoo, and Engineering Intern at the Port Authority of Douala: built client web applications, a food-delivery marketplace, and a government document-management system with PHP, JavaScript, WordPress, and MySQL.",
 		],
 	},
+];
+
+export type Capability = {
+	title: string;
+	detail: string;
+	tag: string;
+	stack: string[];
+};
+
+// Anonymized highlights. Client and employer names withheld under NDA; the
+// engineering is real.
+export const capabilities: Capability[] = [
 	{
-		company: "Coredoo",
-		role: "Software Engineer",
-		location: "Douala, Cameroon",
-		period: "Jun 2017 — Jul 2018",
-		bullets: [
-			"Core engineer on Coredoo's food delivery web app, building the product from the ground up with HTML, CSS, JavaScript, and PHP (CodeIgniter, Laravel).",
-		],
+		title: "Semantic search over 10k+ expert profiles",
+		detail:
+			"A Pinecone-backed embeddings and vector-search system, paired with an OpenAI pipeline that turns natural-language queries into structured, filterable properties.",
+		tag: "AI / Search",
+		stack: ["Pinecone", "OpenAI", "TypeScript"],
 	},
 	{
-		company: "Port Authority of Douala",
-		role: "Engineering Intern",
-		location: "Douala, Cameroon",
-		period: "Jul 2017 — Sep 2017",
-		bullets: [
-			"Built a Document Management System as the primary intern project and resolved engineering tickets across existing PHP, MySQL, and Oracle applications.",
-		],
+		title: "LLM orchestration on Temporal",
+		detail:
+			"Embedding generation, OpenAI extraction, and retries run as durable Temporal workflows across a multi-tenant platform, deployed on Docker and Kubernetes.",
+		tag: "Infrastructure",
+		stack: ["Temporal", "Kubernetes", "Python"],
+	},
+	{
+		title: "Billing and invoicing engine",
+		detail:
+			"A time-log-based billing engine and the step-execution logic behind a visual process builder, shipped across 235 merged pull requests.",
+		tag: "Backend",
+		stack: ["PostgreSQL", "Node.js", "Stripe"],
 	},
 ];
 
 export const education = {
 	degree: "B.Sc. Software Engineering",
 	school: "Catholic University Institute of Buea",
-	period: "2014 — 2018",
+	period: "2014 - 2018",
 };
 
 export const skills = [
@@ -102,8 +120,10 @@ export const skills = [
 		items: [
 			"Embeddings",
 			"Vector Search (Pinecone)",
+			"LLM Orchestration (Temporal)",
 			"OpenAI API Integration",
 			"LLM-Based Extraction",
+			"Agentic Coding (Claude Code)",
 		],
 	},
 	{
@@ -132,6 +152,7 @@ export const skills = [
 			"FastAPI",
 			"GraphQL",
 			"Kafka",
+			"Temporal",
 			"REST",
 		],
 	},

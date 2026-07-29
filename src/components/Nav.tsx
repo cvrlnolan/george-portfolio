@@ -8,6 +8,7 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "#/components/ui/sheet";
+import { useActiveSection } from "#/hooks/useActiveSection";
 import { profile } from "#/lib/content";
 
 const links = [
@@ -18,9 +19,12 @@ const links = [
 	{ href: "#contact", label: "contact" },
 ];
 
+const sectionIds = links.map((l) => l.href.slice(1));
+
 export function Nav() {
 	const [open, setOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const active = useActiveSection(sectionIds);
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 8);
@@ -38,22 +42,30 @@ export function Nav() {
 			}`}
 		>
 			<nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 text-sm">
-				<a href="#top" className="tracking-tight text-ink">
+				<a href="#top" className="font-mono text-sm tracking-tight text-ink">
 					george<span className="text-signal">.</span>yana
 					<span className="cursor-blink text-signal">_</span>
 				</a>
 
 				<ul className="hidden items-center gap-8 md:flex">
-					{links.map((link) => (
-						<li key={link.href}>
-							<a
-								href={link.href}
-								className="text-ink-dim transition-colors hover:text-signal"
-							>
-								{link.label}
-							</a>
-						</li>
-					))}
+					{links.map((link) => {
+						const isActive = active === link.href.slice(1);
+						return (
+							<li key={link.href}>
+								<a
+									href={link.href}
+									className={`relative transition-colors ${
+										isActive ? "text-ink" : "text-ink-dim hover:text-ink"
+									}`}
+								>
+									{link.label}
+									{isActive && (
+										<span className="absolute -bottom-1.5 left-0 h-px w-full bg-signal" />
+									)}
+								</a>
+							</li>
+						);
+					})}
 				</ul>
 
 				<Button
