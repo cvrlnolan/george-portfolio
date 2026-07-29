@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "#/components/Reveal";
 import { SectionHeading } from "#/components/SectionHeading";
 import { experience } from "#/lib/content";
@@ -16,7 +17,22 @@ export function Experience() {
 									{job.period}
 								</p>
 								<h3 className="mt-3 flex items-center gap-2.5 font-display text-xl font-medium tracking-tight text-ink">
-									{job.company}
+									{job.url ? (
+										<a
+											href={job.url}
+											target="_blank"
+											rel="noreferrer"
+											className="group/link inline-flex items-center gap-1 transition-colors hover:text-signal"
+										>
+											{job.company}
+											<ArrowUpRight
+												size={15}
+												className="text-ink-faint transition-all group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 group-hover/link:text-signal"
+											/>
+										</a>
+									) : (
+										job.company
+									)}
 									{job.current && (
 										<span className="inline-flex items-center gap-1.5 rounded-full border border-signal/30 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-signal">
 											<span className="h-1 w-1 rounded-full bg-signal" />

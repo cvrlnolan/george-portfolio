@@ -20,6 +20,7 @@ export const stats = [
 
 export type Job = {
 	company: string;
+	url?: string;
 	role: string;
 	subtitle?: string;
 	location: string;
@@ -31,6 +32,7 @@ export type Job = {
 export const experience: Job[] = [
 	{
 		company: "Invisible Technologies",
+		url: "https://invisibletech.ai/",
 		role: "Senior Software Engineer",
 		subtitle: "$2B AI workforce and process-automation platform",
 		location: "Remote",
@@ -45,6 +47,7 @@ export const experience: Job[] = [
 	},
 	{
 		company: "Lemonet",
+		url: "https://lemonet.com/",
 		role: "Software Engineer, Part-Time Contract",
 		subtitle: "Early-stage marketing-technology startup",
 		location: "Remote",
@@ -56,6 +59,7 @@ export const experience: Job[] = [
 	},
 	{
 		company: "Certified Upwork Freelancer",
+		url: "https://www.upwork.com/freelancers/georgembome",
 		role: "Software Engineer",
 		location: "Remote",
 		period: "Feb 2019 - Present",
