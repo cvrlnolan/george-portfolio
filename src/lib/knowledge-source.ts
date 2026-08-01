@@ -58,6 +58,10 @@ const facts: Chunk[] = [
 		id: "meta-askgeorge",
 		text: `This "Ask George" assistant is itself a retrieval-augmented generation (RAG) app that George built: it embeds his experience with OpenAI embeddings, retrieves the most relevant facts by cosine similarity, and streams answers from Llama 3.3 70B on Groq, running on a Vercel edge function.`,
 	},
+	{
+		id: "strongest-stack",
+		text: `${profile.name} is a senior full-stack engineer, not a narrow specialist: he is equally comfortable across the frontend (React, Next.js, TypeScript), backend (Node.js, Python, Django, FastAPI, PostgreSQL), AI/LLM engineering (embeddings, vector search, OpenAI API integration, LLM orchestration on Temporal), and DevOps (Docker, Kubernetes, CI/CD). If asked for a single strongest area, his deepest and most recent focus is AI-integrated backend engineering: production LLM features backed by solid database and infrastructure work, not just frontend polish.`,
+	},
 ];
 
 // One overview chunk per job + one enriched chunk per bullet.
@@ -76,10 +80,12 @@ const experienceChunks: Chunk[] = experience.flatMap((job) => {
 	return [overview, ...bullets];
 });
 
-// Anonymized project highlights.
+// Selected work highlights. Some are named (Invisible Technologies, credited
+// elsewhere on the site); freelance/client engagements without a company
+// named here are anonymized under NDA — the engineering is real either way.
 const capabilityChunks: Chunk[] = capabilities.map((c, i) => ({
 	id: `cap-${i}`,
-	text: `Selected work by ${profile.name} (client anonymized under NDA). ${c.title}: ${c.detail} Stack: ${c.stack.join(", ")}.`,
+	text: `Selected work by ${profile.name}. ${c.title}: ${c.detail} Stack: ${c.stack.join(", ")}.`,
 }));
 
 // One chunk per skill group keeps "does he know X?" queries precise.

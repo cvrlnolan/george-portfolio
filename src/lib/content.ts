@@ -39,6 +39,7 @@ export const experience: Job[] = [
 		period: "Dec 2021 - Jul 2026",
 		bullets: [
 			"Shipped 600+ merged pull requests (1,100+ commits) across 11 repositories in TypeScript and Python, ranking as a top-2 individual contributor on the core backend platform used by Meta, Apple, Amazon, and xAI.",
+			"Served as co-tech lead on the onboarding team, building the opportunity/application system and expert onboarding flows end to end, including identity and address verification through trusted third-party providers (Socure, Jumio) and skills assessments via WECP and Hallo.",
 			"Built LLM-powered product features end to end with agentic coding workflows (Claude Code): a Pinecone-backed embeddings and vector-search system indexing thousands of expert profiles, plus an OpenAI pipeline converting natural-language search into structured, filterable properties.",
 			"Orchestrated LLM workloads (embedding generation, OpenAI extraction, retries) through Temporal workflows, refactored core services for multi-tenancy, and deployed on Docker and Kubernetes.",
 			"Designed PostgreSQL and Neo4j services for an expert verification and assessment platform, including fraud-detection checks and third-party AI-assessment integrations (WECP, Hallo AI), at 59% automated test coverage.",
@@ -109,6 +110,20 @@ export const capabilities: Capability[] = [
 			"A time-log-based billing engine and the step-execution logic behind a visual process builder, shipped across 235 merged pull requests.",
 		tag: "Backend",
 		stack: ["PostgreSQL", "Node.js", "Stripe"],
+	},
+	{
+		title: "Opportunity & application system",
+		detail:
+			"Designed and implemented the opportunity/application system experts use to apply for and get matched to work, and managed a team through its build-out as co-tech lead on the onboarding team at Invisible Technologies.",
+		tag: "Leadership / Product",
+		stack: ["TypeScript", "PostgreSQL", "React"],
+	},
+	{
+		title: "Expert onboarding & identity verification",
+		detail:
+			"Built the expert onboarding flows at Invisible Technologies, integrating third-party identity and address verification (Socure, Jumio) and skills assessments (WECP, Hallo) into the platform's expert verification and assessment system.",
+		tag: "Backend / Integrations",
+		stack: ["PostgreSQL", "Neo4j", "TypeScript"],
 	},
 ];
 

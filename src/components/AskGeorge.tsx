@@ -64,7 +64,7 @@ export function AskGeorge() {
 	return (
 		<section
 			id="top"
-			className="relative flex min-h-[100dvh] flex-col justify-center px-6 pt-28 pb-20"
+			className="relative flex min-h-dvh flex-col justify-center px-6 pt-28 pb-20"
 		>
 			<div className="mx-auto w-full max-w-2xl text-center">
 				<p className="mb-7 inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.18em] text-ink-faint">
@@ -100,14 +100,14 @@ export function AskGeorge() {
 						rows={1}
 						maxLength={500}
 						placeholder="Ask about my experience, stack, or availability…"
-						className="min-h-[3.5rem] w-full resize-none rounded-2xl border border-line bg-panel px-5 py-4 pr-16 text-left text-[0.975rem] leading-relaxed text-ink placeholder:text-ink-faint focus:border-line-strong focus:outline-none"
+						className="min-h-14 w-full resize-none rounded-2xl border border-line bg-panel px-5 py-4 pr-16 text-left text-[0.975rem] leading-relaxed text-ink placeholder:text-ink-faint focus:border-line-strong focus:outline-none"
 					/>
 					<button
 						ref={send}
 						type="submit"
 						disabled={loading || !input.trim()}
 						aria-label="Ask"
-						className="absolute right-3 bottom-3 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-signal text-void transition-[transform,opacity] duration-200 ease-out will-change-transform hover:bg-signal/90 disabled:cursor-not-allowed disabled:opacity-30"
+						className="absolute right-3 top-1/2 -mt-4.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-signal text-void transition-[transform,opacity] duration-200 ease-out will-change-transform hover:bg-signal/90 disabled:cursor-not-allowed disabled:opacity-30"
 					>
 						{loading ? (
 							<Loader2 size={17} className="animate-spin" />
