@@ -1,6 +1,8 @@
 export const profile = {
 	name: "George Mbome",
-	role: "Senior Software Engineer",
+	role: "Senior Full-stack Software Engineer",
+	positioning:
+		"I build production software across frontend, backend, data, infrastructure, and AI-powered systems.",
 	location: "Douala, Cameroon",
 	phone: "+237 696 740 298",
 	email: "georgecvrl0@gmail.com",
@@ -8,14 +10,14 @@ export const profile = {
 	githubUrl: "https://github.com/cvrlnolan",
 	resumeUrl: "/George-Yana-Mbome-Resume.pdf",
 	summary:
-		"Senior Software Engineer with 4+ years at Invisible Technologies, a $2B AI and workflow-automation company, where I shipped 600+ merged PRs across 11 repos including LLM-powered product features (Pinecone, OpenAI) and Temporal-orchestrated infrastructure. I also ran a part-time contract at Lemonet (141 merged PRs) and have 7+ years of freelance and startup experience. Full-stack and comfortable in infrastructure, with agentic coding tools (Claude Code) part of my daily workflow, and a track record of owning features autonomously while working across teams.",
+		"Senior Full-stack Software Engineer with 9+ years of experience building and shipping production software across frontend, backend, data, workflows, and infrastructure.\n\nI enjoy working across the stack rather than being confined to one layer of a system. I particularly enjoy building the frontend experiences and product workflows users interact with, while understanding and owning the APIs, backend services, data models, asynchronous workflows, and infrastructure behind them.\n\nMy recent work spans AI-powered search and extraction, marketplaces, expert verification, billing, workflow automation, and internal product platforms. I also have hands-on experience with RAG, embeddings, vector search, LLM APIs, Temporal, PostgreSQL, Neo4j, Docker, and Kubernetes.",
 };
 
 export const stats = [
 	{ value: "600+", label: "merged pull requests" },
 	{ value: "11", label: "production repositories" },
-	{ value: "11+ yrs", label: "engineering experience" },
-	{ value: "$2B", label: "platform scale, Invisible" },
+	{ value: "9+ yrs", label: "engineering experience" },
+	{ value: "100K+", label: "specialists searchable" },
 ];
 
 export type Job = {
@@ -38,12 +40,12 @@ export const experience: Job[] = [
 		location: "Remote",
 		period: "Dec 2021 - Jul 2026",
 		bullets: [
-			"Shipped 600+ merged pull requests (1,100+ commits) across 11 repositories in TypeScript and Python, ranking as a top-2 individual contributor on the core backend platform used by Meta, Apple, Amazon, and xAI.",
-			"Served as co-tech lead on the onboarding team, building the opportunity/application system and expert onboarding flows end to end, including identity and address verification through trusted third-party providers (Socure, Jumio) and skills assessments via WECP and Hallo.",
-			"Built LLM-powered product features end to end with agentic coding workflows (Claude Code): a Pinecone-backed embeddings and vector-search system indexing thousands of expert profiles, plus an OpenAI pipeline converting natural-language search into structured, filterable properties.",
-			"Orchestrated LLM workloads (embedding generation, OpenAI extraction, retries) through Temporal workflows, refactored core services for multi-tenancy, and deployed on Docker and Kubernetes.",
-			"Designed PostgreSQL and Neo4j services for an expert verification and assessment platform, including fraud-detection checks and third-party AI-assessment integrations (WECP, Hallo AI), at 59% automated test coverage.",
-			"Engineered core billing and invoicing infrastructure (235 merged PRs): a time-log-based billing engine and the step-execution logic behind the visual process builder.",
+			"Built and owned full-stack product features spanning frontend experiences, APIs, backend services, data models, workflows, testing, and production infrastructure; shipped 600+ merged pull requests across 11 repositories in TypeScript and Python.",
+			"Helped architect and launch Meridial, a global marketplace connecting specialized human experts with AI training projects, contributing across marketplace, onboarding, and workflow experiences.",
+			"Built an AI-powered expert search pipeline using RAG, embeddings, Pinecone, LLMs, and Temporal to search a network of 100K+ specialists using natural-language queries, filters, and structured conditions.",
+			"Designed LLM-powered extraction workflows that converted natural-language input into structured, filterable properties and orchestrated asynchronous LLM workloads with Temporal.",
+			"Served as co-tech lead for the expert onboarding team, leading architecture and implementation of Opportunity/Application workflows and onboarding experiences involving identity verification and skills assessments through Jumio, Socure, WeCP, and Hallo AI.",
+			"Engineered core billing and invoicing functionality, real-time time tracking, workflow execution logic, and PostgreSQL/Neo4j-backed marketplace and verification services deployed with Docker and Kubernetes.",
 		],
 	},
 	{
@@ -54,8 +56,9 @@ export const experience: Job[] = [
 		location: "Remote",
 		period: "Jun 2025 - Apr 2026",
 		bullets: [
-			"Delivered 141 merged pull requests building core admin surfaces (a webmaster partner portal and leadership, fulfillment, and team-performance dashboards) and Stripe-based subscription billing and cancellation logic, ranking as the 4th most active contributor of 13 on the monorepo.",
-			"Designed and scaled a self-hosted GitHub Actions runner fleet and resolved a recurring CI build-cache regression, documented in the team's build-performance runbook.",
+			"Delivered 141 merged pull requests building core internal product surfaces including a webmaster partner portal, leadership dashboards, fulfillment tooling, and team-performance dashboards, alongside Stripe subscription billing and cancellation workflows.",
+			"Introduced TanStack Router as the primary frontend routing framework and contributed to frontend architecture, developer experience, CI/CD, and self-hosted GitHub Actions infrastructure.",
+			"Integrated platform data and automation workflows across tools including Attio, n8n, PostHog, and Temporal.",
 		],
 	},
 	{
@@ -66,7 +69,8 @@ export const experience: Job[] = [
 		period: "Feb 2019 - Present",
 		current: true,
 		bullets: [
-			"Delivered full-stack web applications for international clients with a 100% job success score, using React, TypeScript, Next.js, Python, and FastAPI.",
+			"Delivered full-stack applications for international clients with a 100% Job Success Score, owning projects from architecture and technical design through implementation, deployment, monitoring, and maintenance.",
+			"Built production applications using React, TypeScript, Next.js, Python, FastAPI, PostgreSQL, and MySQL, with more recent work incorporating AI-powered product features.",
 		],
 	},
 	{
@@ -87,43 +91,50 @@ export type Capability = {
 	stack: string[];
 };
 
-// Anonymized highlights. Client and employer names withheld under NDA; the
-// engineering is real.
+// Much of this work was built under NDA; company names are withheld where
+// not already credited elsewhere on the site.
 export const capabilities: Capability[] = [
 	{
-		title: "Semantic search over 10k+ expert profiles",
+		title: "AI-powered expert search",
 		detail:
-			"A Pinecone-backed embeddings and vector-search system, paired with an OpenAI pipeline that turns natural-language queries into structured, filterable properties.",
+			"Built a semantic retrieval system combining natural-language query understanding, embeddings, Pinecone vector search, structured filtering, and LLM-based processing to find relevant specialists across a 100K+ expert network.",
 		tag: "AI / Search",
-		stack: ["Pinecone", "OpenAI", "TypeScript"],
+		stack: ["Pinecone", "OpenAI", "TypeScript", "PostgreSQL"],
 	},
 	{
-		title: "LLM orchestration on Temporal",
+		title: "LLM workflow orchestration",
 		detail:
-			"Embedding generation, OpenAI extraction, and retries run as durable Temporal workflows across a multi-tenant platform, deployed on Docker and Kubernetes.",
-		tag: "Infrastructure",
-		stack: ["Temporal", "Kubernetes", "Python"],
+			"Designed durable Temporal workflows for embedding generation, LLM-based extraction, retries, and long-running asynchronous processing across a multi-tenant platform.",
+		tag: "AI / Infrastructure",
+		stack: ["Temporal", "OpenAI", "Python", "Docker", "Kubernetes"],
 	},
 	{
-		title: "Billing and invoicing engine",
+		title: "Marketplace & opportunity platform",
 		detail:
-			"A time-log-based billing engine and the step-execution logic behind a visual process builder, shipped across 235 merged pull requests.",
-		tag: "Backend",
-		stack: ["PostgreSQL", "Node.js", "Stripe"],
+			"Helped architect and build marketplace opportunity and application workflows connecting specialized experts with AI training projects, including onboarding and automated shortlisting capabilities.",
+		tag: "Product / Leadership",
+		stack: ["TypeScript", "React", "PostgreSQL", "Temporal"],
 	},
 	{
-		title: "Opportunity & application system",
+		title: "Expert onboarding & verification",
 		detail:
-			"Designed and implemented the opportunity/application system experts use to apply for and get matched to work, and managed a team through its build-out as co-tech lead on the onboarding team at Invisible Technologies.",
-		tag: "Leadership / Product",
-		stack: ["TypeScript", "PostgreSQL", "React"],
+			"Built onboarding and verification workflows integrating identity, address, and skills-assessment providers including Socure, Jumio, WeCP, and Hallo AI.",
+		tag: "Product / Integrations",
+		stack: ["TypeScript", "PostgreSQL", "Neo4j", "React"],
 	},
 	{
-		title: "Expert onboarding & identity verification",
+		title: "Billing & workflow execution",
 		detail:
-			"Built the expert onboarding flows at Invisible Technologies, integrating third-party identity and address verification (Socure, Jumio) and skills assessments (WECP, Hallo) into the platform's expert verification and assessment system.",
-		tag: "Backend / Integrations",
-		stack: ["PostgreSQL", "Neo4j", "TypeScript"],
+			"Engineered time-based billing, invoicing, and workflow step-execution systems supporting automated and human-in-the-loop enterprise processes.",
+		tag: "Backend / Systems",
+		stack: ["TypeScript", "PostgreSQL", "Node.js", "Stripe"],
+	},
+	{
+		title: "The AI assistant behind this portfolio",
+		detail:
+			"Built the AI assistant powering this portfolio using a retrieval-augmented architecture: knowledge extraction, chunking, embeddings, semantic retrieval, context assembly, LLM generation, streaming responses, rate limiting, and prompt-injection guardrails.",
+		tag: "AI / Product",
+		stack: ["TypeScript", "OpenAI", "Embeddings", "Vector Search", "SSE"],
 	},
 ];
 
@@ -135,19 +146,21 @@ export const education = {
 
 export const skills = [
 	{
-		group: "AI / ML",
+		group: "AI / LLM",
 		items: [
+			"RAG",
 			"Embeddings",
-			"Vector Search (Pinecone)",
-			"LLM Orchestration (Temporal)",
-			"OpenAI API Integration",
-			"LLM-Based Extraction",
-			"Agentic Coding (Claude Code)",
+			"Vector Search",
+			"LLM-based Extraction",
+			"OpenAI APIs",
+			"Pinecone",
+			"pgvector",
+			"Temporal",
 		],
 	},
 	{
 		group: "Languages",
-		items: ["JavaScript", "TypeScript", "Python", "PHP"],
+		items: ["TypeScript", "JavaScript", "Python"],
 	},
 	{
 		group: "Frontend",
@@ -155,42 +168,37 @@ export const skills = [
 			"React",
 			"Next.js",
 			"Tailwind CSS",
-			"Material UI",
-			"HTML5/CSS3",
-			"GraphQL",
-			"REST APIs",
-			"WebSockets",
+			"Vite",
+			"TanStack Router",
+			"HTML5",
+			"CSS3",
 		],
 	},
 	{
 		group: "Backend",
 		items: [
 			"Node.js",
+			"Fastify",
 			"Express",
-			"Django",
 			"FastAPI",
+			"Django",
 			"GraphQL",
-			"Kafka",
-			"Temporal",
-			"REST",
+			"REST APIs",
 		],
 	},
 	{
-		group: "Databases",
-		items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Neo4j", "Oracle DB"],
+		group: "Data",
+		items: ["PostgreSQL", "Neo4j", "MongoDB", "MySQL"],
 	},
 	{
-		group: "DevOps & Testing",
+		group: "Infrastructure & Testing",
 		items: [
 			"Docker",
 			"Kubernetes",
-			"Helm",
-			"Argo CD",
 			"GitHub Actions",
-			"Vercel",
 			"Jest",
+			"Vitest",
 			"Pytest",
-			"Cypress",
 			"Playwright",
 		],
 	},

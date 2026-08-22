@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useInView } from "#/hooks/useInView";
 
-// Splits "600+" / "$2B" / "11+ yrs" into prefix, number, suffix so only the
+// Splits "600+" / "100K+" / "9+ yrs" into prefix, number, suffix so only the
 // numeric part animates and the decoration is preserved.
 function parse(value: string) {
 	const m = value.match(/^(\D*?)([\d.]+)(.*)$/);

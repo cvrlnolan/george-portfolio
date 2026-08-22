@@ -10,17 +10,8 @@ export function Projects() {
 
 			<Reveal>
 				<p className="max-w-xl leading-relaxed text-ink-dim">
-					Client and employer names are withheld under NDA, so here is the
-					engineering instead. More on{" "}
-					<a
-						href={profile.githubUrl}
-						target="_blank"
-						rel="noreferrer"
-						className="text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:decoration-signal"
-					>
-						{profile.github}
-					</a>
-					.
+					Much of my production work was built under NDA. These are the
+					engineering problems, systems, and architectures behind that work.
 				</p>
 			</Reveal>
 

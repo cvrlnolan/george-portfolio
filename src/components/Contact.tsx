@@ -75,9 +75,9 @@ export function Contact() {
 
 			<Reveal>
 				<p className="max-w-2xl text-balance text-2xl font-light leading-snug text-ink md:text-3xl">
-					Looking for my next senior engineering role, and open to freelance
-					work in the meantime. Reach out and let's talk about what you're
-					building.
+					I'm currently open to Senior Full-stack Software Engineering
+					opportunities and selected freelance engagements. If you're building
+					something interesting, let's talk.
 				</p>
 			</Reveal>
 

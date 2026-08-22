@@ -44,7 +44,7 @@ const facts: Chunk[] = [
 	},
 	{
 		id: "availability",
-		text: `${profile.name} is currently looking for his next senior software engineering role and is open to freelance and contract work in the meantime. He is available now and works remotely from ${profile.location}.`,
+		text: `${profile.name} is currently open to Senior Full-stack Software Engineering opportunities and selected freelance engagements. He works remotely from ${profile.location}.`,
 	},
 	{
 		id: "contact",
@@ -52,7 +52,7 @@ const facts: Chunk[] = [
 	},
 	{
 		id: "focus",
-		text: `${profile.name} is a full-stack engineer moving deeper into AI engineering: LLM-powered product features, embeddings and vector search, retrieval-augmented generation (RAG), and LLM orchestration on Temporal. He uses agentic coding tools (Claude Code) in his daily workflow.`,
+		text: `${profile.name} is a Senior Full-stack Software Engineer who builds production software across frontend, backend, data, infrastructure, and AI-powered systems. He enjoys working across the full stack rather than being confined to one layer: building the frontend experiences and product workflows users interact with, while owning the APIs, backend services, data models, asynchronous workflows, and infrastructure behind them. His recent work includes hands-on experience with RAG, embeddings, vector search, LLM APIs, and Temporal.`,
 	},
 	{
 		id: "meta-askgeorge",
@@ -60,7 +60,7 @@ const facts: Chunk[] = [
 	},
 	{
 		id: "strongest-stack",
-		text: `${profile.name} is a senior full-stack engineer, not a narrow specialist: he is equally comfortable across the frontend (React, Next.js, TypeScript), backend (Node.js, Python, Django, FastAPI, PostgreSQL), AI/LLM engineering (embeddings, vector search, OpenAI API integration, LLM orchestration on Temporal), and DevOps (Docker, Kubernetes, CI/CD). If asked for a single strongest area, his deepest and most recent focus is AI-integrated backend engineering: production LLM features backed by solid database and infrastructure work, not just frontend polish.`,
+		text: `${profile.name}'s strongest technical area is full-stack product engineering: owning a feature end to end across frontend (React, Next.js, TypeScript), backend (Node.js, Python, Django, FastAPI, PostgreSQL), and infrastructure (Docker, Kubernetes, CI/CD), rather than working in a single layer. Within that range, his most recent depth is in AI-powered systems: RAG, embeddings, vector search, and LLM orchestration on Temporal, applied to real production features rather than isolated experiments.`,
 	},
 ];
 

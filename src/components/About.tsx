@@ -10,9 +10,11 @@ export function About() {
 
 			<div className="grid gap-14 md:grid-cols-[1.45fr_1fr] md:gap-20">
 				<Reveal>
-					<p className="text-balance text-2xl font-light leading-snug text-ink md:text-[1.75rem]">
-						{profile.summary}
-					</p>
+					<div className="flex flex-col gap-5 text-balance text-2xl font-light leading-snug text-ink md:text-[1.75rem]">
+						{profile.summary.split("\n\n").map((para) => (
+							<p key={para.slice(0, 24)}>{para}</p>
+						))}
+					</div>
 				</Reveal>
 
 				<Reveal delay={120}>

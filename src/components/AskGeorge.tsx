@@ -5,9 +5,10 @@ import { profile } from "#/lib/content";
 
 const suggestions = [
 	"What did you build at Invisible?",
-	"Do you know Temporal?",
-	"Are you available for freelance?",
-	"What's your strongest stack?",
+	"Tell me about your AI/LLM experience.",
+	"What systems have you designed?",
+	"What's your strongest technical area?",
+	"Tell me about the expert search system.",
 ];
 
 export function AskGeorge() {
@@ -76,9 +77,20 @@ export function AskGeorge() {
 					{profile.name}
 				</h1>
 
-				<p className="mx-auto mt-5 max-w-md text-lg text-ink-dim">
-					AI trained on my real experience. Ask it anything.
+				<p className="mx-auto mt-5 max-w-lg text-lg text-ink-dim">
+					{profile.positioning}
 				</p>
+
+				{/* AI assistant — secondary to the professional identity above */}
+				<div className="mx-auto mt-10 max-w-md">
+					<h2 className="font-display text-lg font-medium text-ink">
+						Ask about my experience
+					</h2>
+					<p className="mt-1.5 text-sm text-ink-dim">
+						AI-powered answers grounded in my actual work and engineering
+						experience.
+					</p>
+				</div>
 
 				{/* Prompt */}
 				<form

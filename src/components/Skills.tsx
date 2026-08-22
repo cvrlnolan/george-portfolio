@@ -5,7 +5,7 @@ import { education, skills } from "#/lib/content";
 export function Skills() {
 	return (
 		<section id="skills" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
-			<SectionHeading title="Skills" />
+			<SectionHeading title="Engineering" />
 
 			<div className="flex flex-col divide-y divide-line">
 				{skills.map((group, i) => (
