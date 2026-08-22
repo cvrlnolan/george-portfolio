@@ -14,8 +14,8 @@ import { profile } from "#/lib/content";
 const links = [
 	{ href: "#about", label: "about" },
 	{ href: "#experience", label: "experience" },
-	{ href: "#skills", label: "skills" },
-	{ href: "#projects", label: "projects" },
+	{ href: "#engineering", label: "engineering" },
+	{ href: "#work", label: "work" },
 	{ href: "#contact", label: "contact" },
 ];
 

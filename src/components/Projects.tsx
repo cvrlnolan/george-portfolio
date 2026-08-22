@@ -5,7 +5,7 @@ import { capabilities, profile } from "#/lib/content";
 
 export function Projects() {
 	return (
-		<section id="projects" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
+		<section id="work" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
 			<SectionHeading title="Selected work" />
 
 			<Reveal>

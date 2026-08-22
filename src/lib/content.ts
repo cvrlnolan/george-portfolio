@@ -17,7 +17,7 @@ export const stats = [
 	{ value: "600+", label: "merged pull requests" },
 	{ value: "11", label: "production repositories" },
 	{ value: "9+ yrs", label: "engineering experience" },
-	{ value: "100K+", label: "specialists searchable" },
+	{ value: "100K+", label: "specialist network" },
 ];
 
 export type Job = {
@@ -36,7 +36,7 @@ export const experience: Job[] = [
 		company: "Invisible Technologies",
 		url: "https://invisibletech.ai/",
 		role: "Senior Software Engineer",
-		subtitle: "$2B AI workforce and process-automation platform",
+		subtitle: "AI workforce and enterprise process automation",
 		location: "Remote",
 		period: "Dec 2021 - Jul 2026",
 		bullets: [

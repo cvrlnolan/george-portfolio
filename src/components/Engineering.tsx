@@ -2,9 +2,9 @@ import { Reveal } from "#/components/Reveal";
 import { SectionHeading } from "#/components/SectionHeading";
 import { education, skills } from "#/lib/content";
 
-export function Skills() {
+export function Engineering() {
 	return (
-		<section id="skills" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
+		<section id="engineering" className="mx-auto max-w-5xl px-6 py-32 md:py-40">
 			<SectionHeading title="Engineering" />
 
 			<div className="flex flex-col divide-y divide-line">
