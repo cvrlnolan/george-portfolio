@@ -132,7 +132,7 @@ export default async function handler(req: Request): Promise<Response> {
 				Authorization: `Bearer ${GROQ_API_KEY}`,
 			},
 			body: JSON.stringify({
-				model: "llama-3.3-70b-versatile",
+				model: "openai/gpt-oss-120b",
 				stream: true,
 				temperature: 0.3, // low = factual, sticks to the context
 				max_tokens: MAX_OUTPUT_TOKENS,

@@ -56,7 +56,7 @@ const facts: Chunk[] = [
 	},
 	{
 		id: "meta-askgeorge",
-		text: `This "Ask George" assistant is itself a retrieval-augmented generation (RAG) app that George built: it embeds his experience with OpenAI embeddings, retrieves the most relevant facts by cosine similarity, and streams answers from Llama 3.3 70B on Groq, running on a Vercel edge function.`,
+		text: `This "Ask George" assistant is itself a retrieval-augmented generation (RAG) app that George built: it embeds his experience with OpenAI embeddings, retrieves the most relevant facts by cosine similarity, and streams answers from an open-weight LLM (GPT-OSS 120B) on Groq, running on a Vercel edge function.`,
 	},
 	{
 		id: "strongest-stack",
