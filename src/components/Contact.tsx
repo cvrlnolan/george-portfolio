@@ -1,4 +1,11 @@
-import { ArrowUpRight, Check, Copy, Github, Mail, Phone } from "lucide-react";
+import {
+	ArrowUpRight,
+	Check,
+	Copy,
+	Github,
+	Linkedin,
+	Mail,
+} from "lucide-react";
 import { useState } from "react";
 import { Reveal } from "#/components/Reveal";
 import { SectionHeading } from "#/components/SectionHeading";
@@ -13,9 +20,10 @@ const rows = [
 		external: true,
 	},
 	{
-		icon: Phone,
-		label: profile.phone,
-		href: `tel:${profile.phone.replace(/\s+/g, "")}`,
+		icon: Linkedin,
+		label: profile.linkedin,
+		href: profile.linkedinUrl,
+		external: true,
 	},
 ];
 

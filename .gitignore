@@ -12,3 +12,7 @@ dist-ssr
 __unconfig*
 todos.json
 .vercel
+
+# loose résumé/cover-letter drafts at repo root — public/*.pdf (site asset) unaffected
+/*.pdf
+/*.docx

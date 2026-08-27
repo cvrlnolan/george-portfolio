@@ -40,15 +40,15 @@ const summaryChunk: Chunk = { id: "summary", text: profile.summary };
 const facts: Chunk[] = [
 	{
 		id: "identity",
-		text: `${profile.name} is a ${profile.role} based in ${profile.location}. He works remotely and collaborates across time zones.`,
+		text: `${profile.name} is a ${profile.role}. He works remotely and collaborates across time zones.`,
 	},
 	{
 		id: "availability",
-		text: `${profile.name} is currently open to Senior Full-stack Software Engineering opportunities and selected freelance engagements. He works remotely from ${profile.location}.`,
+		text: `${profile.name} is currently open to Senior Full-stack Software Engineering opportunities and selected freelance engagements. He works remotely.`,
 	},
 	{
 		id: "contact",
-		text: `To reach ${profile.name}: email ${profile.email}, GitHub ${profile.github}, phone ${profile.phone}, Upwork profile https://www.upwork.com/freelancers/georgembome. His résumé is downloadable from this site.`,
+		text: `To reach ${profile.name}: email ${profile.email}, GitHub ${profile.github}, LinkedIn ${profile.linkedin}, Upwork profile https://www.upwork.com/freelancers/georgembome. His résumé is downloadable from this site.`,
 	},
 	{
 		id: "focus",

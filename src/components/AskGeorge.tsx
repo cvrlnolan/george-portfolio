@@ -70,7 +70,7 @@ export function AskGeorge() {
 			<div className="mx-auto w-full max-w-2xl text-center">
 				<p className="mb-7 inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.18em] text-ink-faint">
 					<span className="h-1.5 w-1.5 rounded-full bg-signal" />
-					{profile.role} · {profile.location} · open to work
+					{profile.role} · open to work
 				</p>
 
 				<h1 className="font-display text-[clamp(2.75rem,9vw,5.5rem)] font-semibold leading-[0.92] tracking-tight text-ink">

@@ -3,11 +3,11 @@ export const profile = {
 	role: "Senior Full-stack Software Engineer",
 	positioning:
 		"I build production software across frontend, backend, data, infrastructure, and AI-powered systems.",
-	location: "Douala, Cameroon",
-	phone: "+237 696 740 298",
 	email: "georgecvrl0@gmail.com",
 	github: "github.com/cvrlnolan",
 	githubUrl: "https://github.com/cvrlnolan",
+	linkedin: "linkedin.com/in/george-mbome",
+	linkedinUrl: "https://www.linkedin.com/in/george-mbome/",
 	resumeUrl: "/George-Yana-Mbome-Resume.pdf",
 	summary:
 		"Senior Full-stack Software Engineer with 9+ years of experience building and shipping production software across frontend, backend, data, workflows, and infrastructure.\n\nI enjoy working across the stack rather than being confined to one layer of a system. I particularly enjoy building the frontend experiences and product workflows users interact with, while understanding and owning the APIs, backend services, data models, asynchronous workflows, and infrastructure behind them.\n\nMy recent work spans AI-powered search and extraction, marketplaces, expert verification, billing, workflow automation, and internal product platforms. I also have hands-on experience with RAG, embeddings, vector search, LLM APIs, Temporal, PostgreSQL, Neo4j, Docker, and Kubernetes.",
